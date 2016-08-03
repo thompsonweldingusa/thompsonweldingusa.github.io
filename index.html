@@ -528,26 +528,43 @@
                         <small><em>Contact us at our mailing address; 14591 Westbrook Rd in Brookville Ohio, 45309 or for faster service use the email form below.  We can also be reached at (937)242-8455 M-F from 9am to 5pm est.</em></small>            
                     </div>
 
-                    <form>
-                        <div class="row">
+                    <form Action="https://formsubmit.io/send/6f5733bb-4827-4891-8ab7-100ee69efc54" METHOD="POST">
+                      <input name="_redirect" type="hidden" id="name" value="http://www.sisterswithpassports.com/success.html">
+                           <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="exampleInputEmail1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                  <input hidden="hidden" name="Subject" value="contact_form">
+                                    <label for="exampleInputEmail1">First Name *</label>
+                                    <input name="FIRST NAME" class="form-control" placeholder="First name" required="required">
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="exampleInputPassword1">Password</label>
-                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                    <label for="exampleInputPassword1">Last Name *</label>
+                                    <input name="LAST NAME"  class="form-control" placeholder="Last name" required="required">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input name="EMAIL ADDRESS" type="email" class="form-control" id="exampleInputEmail1" placeholder="Jane Doe@iwanttogo.com">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Phone Number</label>
+                                    <input name="PHONE NUMBER" type='tel' class="form-control" pattern='[\(]\d{3}[\)]\d{3}[\-]\d{4}' title='Phone Number (Format: (555)555-5555' placeholder="(555)555-5555">
                                 </div>
                             </div>
                         </div>
                         <div class="form-group">
                             <label for="exampleInputEmail1">Message</label>
-                            <textarea class="form-control" rows="3"></textarea>
+                            <textarea name="MESSAGE" class="form-control" rows="3"></textarea>
                         </div>
-                        
+
                         <button type="submit" class="btn tf-btn btn-default">Submit</button>
                     </form>
 
